@@ -55,6 +55,8 @@ flutter:
     - assets/images/
     - assets/images/landing/home/
     - assets/images/landing/
+    - assets/images/media/
+    - assets/images/SNS/
     # - assets/images/landing/home/device.png
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

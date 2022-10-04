@@ -20,7 +20,7 @@ class _LandingPageState extends State<LandingPage> {
           Flexible(
             flex: 1,
             child: Container(
-              height: 650,
+              height: 680,
               // width: MediaQuery.of(context).size.width * 0.5,
               decoration: BoxDecoration(
                 color: HexColor("#202020"),
@@ -122,7 +122,7 @@ class _LandingPageState extends State<LandingPage> {
                         top: 40,
                       ),
                       child: Container(
-                        width: MediaQuery.of(context).size.width * 0.5,
+                        width: MediaQuery.of(context).size.width * 0.3,
                         decoration: BoxDecoration(
                           // color: Colors.amber,
                           color: HexColor("#202020"),
@@ -309,9 +309,69 @@ class _LandingPageState extends State<LandingPage> {
                 Flexible(
                   flex: 1,
                   child: Container(
-                    height: 600,
+                    height: 900,
                     decoration: BoxDecoration(
                       color: HexColor("#202020"),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 100,
+                        vertical: 100,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            child: Text(
+                              "Muslim In Japan",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 40,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            child: Text(
+                              "Japan has become appealing destination for Muslim travelers recently because it provides the four key elements of nature, climate, culture, and cuisine which is essential to a major tourist destination.",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            child: Text(
+                              "There are over 105 mosques in 36 of Japan's 47 prefectures",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            child: Text(
+                              "The total Muslim population in Japan is estimated to be 200.000 currently. Out of which 10% are native Japanese.",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -319,8 +379,15 @@ class _LandingPageState extends State<LandingPage> {
                   flex: 1,
                   child: Container(
                     height: 600,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
+                    // decoration: BoxDecoration(
+                    //   color: Colors.white,
+                    // ),
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    // height: ,
+                    color: Colors.white,
+                    child: SvgPicture.asset(
+                      "assets/images/landing/info-image.svg",
+                      fit: BoxFit.fill,
                     ),
                   ),
                 ),
@@ -329,9 +396,218 @@ class _LandingPageState extends State<LandingPage> {
           ),
           Flexible(
             child: Container(
-              height: 600,
+              height: 800,
               decoration: BoxDecoration(
                 color: Colors.white,
+              ),
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    child: Text(
+                      "Media Coverage",
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/antara_kaltim.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/antaranews.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/bangsa_online.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        // crossAxisAlignment: CrossAxisAlignment.center,
+                        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/borneoUpdate.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/faktanews.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/indikrag.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          // crossAxisAlignment: CrossAxisAlignment.center,
+                          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/indonews.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/jatim.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/kaltim_kita.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/kbri_tokyo.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/kumparan.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              // color: Colors.black,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/media/tribun_kaltim.png",
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),
@@ -339,7 +615,246 @@ class _LandingPageState extends State<LandingPage> {
             child: Container(
               height: 600,
               decoration: BoxDecoration(
-                color: HexColor("#202020"),
+                color: HexColor(
+                  "#202020",
+                ),
+              ),
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 150,
+                  vertical: 80,
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      // color: Colors.white,
+                      width: 300,
+                      child: Column(
+                        // mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Xetia",
+                            style: TextStyle(
+                              fontSize: 50,
+                              color: HexColor(
+                                "#fbb216",
+                              ),
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text(
+                            "Companies that have a strong hold in the field of Artificial Intelligence, are able to carry out various analyzes by utilizing the most updated technology to perform all digital activities instantly.",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            maxLines: 7,
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 40,
+                    ),
+                    Container(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "About Us",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: HexColor(
+                                "#fbb216",
+                              ),
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 50,
+                          ),
+                          Text(
+                            "Company Profile",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text(
+                            "Teams",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text(
+                            "Contacs",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 40,
+                    ),
+                    Container(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Products",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: HexColor(
+                                "#fbb216",
+                              ),
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 50,
+                          ),
+                          Text(
+                            "Hararu",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Text(
+                            "Dowload\nHararu",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: HexColor(
+                                "#fbb216",
+                              ),
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Container(
+                            height: 30,
+                            width: 100,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(5),
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/imagesv2/google-play-vectors.png",
+                                ),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Container(
+                            height: 30,
+                            width: 100,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(5),
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/imagesv2/appstore-play-vector.png",
+                                ),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 40,
+                    ),
+                    Container(
+                      width: 350,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Contacs",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: HexColor(
+                                "#fbb216",
+                              ),
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 50,
+                          ),
+                          Text(
+                            "Balikpapan , PT Indo Xetia Internasional, Perumahan Rengganis Blok 10d No.5, Gunung Bahagia South Balikpapan, Balikpapan, 76114, East Kalimantan - Indonesia",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text(
+                            "Japan, Fujigaoka 1 - 107 Suriai 1-C, Kasugai city, Aichi Prefecture, Japan",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          // Row(
+                          //   children: [
+                          //     Container(
+                          //       height: 50,
+                          //       width: 50,
+                          //       decoration: BoxDecoration(
+                          //           // color: Colors.white,
+                          //           // borderRadius: BorderRadius.circular(5),
+                          //           // image: DecorationImage(
+                          //           //   image: AssetImage(
+                          //           //     "assets/imagesv2/appstore-play-vector.png",
+                          //           //   ),
+                          //           //   fit: BoxFit.fill,
+                          //           // ),
+                          //           ),
+                          //       child: SvgPicture.asset(
+                          //         "assets/images/SNS/facebook.svg",
+                          //       ),
+                          //     ),
+                          //   ],
+                          // ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
